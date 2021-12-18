@@ -360,7 +360,7 @@ img {
     align-items: center;
 }
 .checktext span {
-    width: 15px;
+    width: 16px;
     height: 15px;
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
@@ -370,7 +370,8 @@ img {
     justify-content: center;
 }
 .modal-checkbox:checked + .checktext span svg{
-    fill: var(--accent-color);
+    fill: var(--white-color);
+    background-color: var(--accent-color);
     border: none;
 } 
 .input-icon-check {
