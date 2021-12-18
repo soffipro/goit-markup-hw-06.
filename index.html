@@ -619,31 +619,93 @@
                 </div>
                 <div class="subscribe">
                     <p class="subscribe-title">Подпишитесь на рассылку</p>
-                    <form>
-                        <label class="input">
+                    <form class="subscribe-form">
+                        <label class="subscribe-label">
                             <input
-                                type="email"
-                                name="email"
+                                type="mail"
+                                name="mail"
+                                class="subscribe-input"
                                 placeholder="E-mail"
+                                required
                             />
                         </label>
-                        <button type="submit">ПОДПИСАТЬСЯ</button>
+                        <button class="submit" type="submit">Подписаться<svg class="tg-icon" width="24" height="24">
+                                <use
+                                    href="./symbol-defs.svg#icon-telegram"
+                                ></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="btn-close" data-modal-close>
+                <button class="btn-close" type="submit" data-modal-close>
                     <svg class="close-icon" width="18" height="18">
                         <use
                             href="/images-studio/icons.svg#icon-close-black"
                         ></use>
                     </svg>
                 </button>
-            </div>
+                <form action="#" class="form-conect">
+                    <p class="form-title">
+                        Оставьте свои данные, мы вам перезвоним
+                    </p>
+                    <div class="form-modal">
+                        <label for="name" class="label">Имя</label>
+                        <input
+                            class="input-form"
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                        /><svg class="input-icon" width="18" height="18"><use href="./images-studio/icons.svg#icon-person-black"></use></svg>
+                    </div>
+                    <div class="form-modal">
+                        <label for="tel" class="label">Телефон</label>
+                        <input
+                            class="input-form"
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            required
+                        /><svg class="input-icon" width="18" height="18"><use href="./images-studio/icons.svg#icon-phone-black"></use></svg>
+                    </div>
+                    <div class="form-modal">
+                        <label for="mail" class="label">Почта</label>
+                        <input
+                            class="input-form"
+                            type="email"
+                            name="mail"
+                            id="mail"
+                        /><svg class="input-icon" width="18" height="18"><use href="./images-studio/icons.svg#icon-email-black"></use></svg>
+                    </div>
+                    <div class="form-modal">
+                        <label for="comment" class="label">Комментарий</label>                                                 
+                            <textarea
+                                name="comment"
+                                class="comment"
+                                id="comment"
+                                placeholder="Введите текст"></textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <label class="label" >
+                            <input 
+                            class="checkbox"
+                            type="checkbox" 
+                            name="checkbox"
+                                /><svg class="input-icon-check" width="16" height="15"><use href="./images-studio/icons.svg#icon-check"></use></svg>
+                            Соглашаюсь с рассылкой и принимаю Условия
+                                договора</label>
+                    </div>    
+                        <button 
+                            class="button-send" 
+                            type="submit">Отправить</button>
+                    </div>
+                </form>
         </div>
-        <!-- </div> -->
+        <!-- SKRIPT -->
         <script src="./js/modal.js"></script>
     </body>
 </html>
