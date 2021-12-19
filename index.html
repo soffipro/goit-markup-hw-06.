@@ -644,12 +644,12 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <button class="btn-close" type="submit" data-modal-close>
                     <svg class="close-icon" width="18" height="18">
                         <use
-                            href="/images-studio/icons.svg#icon-close-black"
+                            href="./images-studio/icons.svg#icon-close-black"
                         ></use>
                     </svg>
                 </button>
@@ -713,32 +713,27 @@
                             placeholder="Введите текст"
                         ></textarea>
                     </div>
-                    <div class="form-checkbox">
+                    <div class="form-modal">
                         <input
-                            class="modal-checkbox visually-hidden"
                             type="checkbox"
+                            class="modal-checkbox visually-hidden"
                             name="agree"
                             id="agree"
                         />
                         <label for="agree" class="checktext">
                             <span
-                                ><svg
-                                    class="input-icon-check"
-                                    width="16"
-                                    height="15"
-                                >
+                                ><svg class="icon-check" width="16" height="15">
                                     <use
                                         href="./images-studio/icons.svg#icon-check"
                                     ></use></svg></span
-                            >Соглашаюсь с рассылкой и принимаю Условия
-                            договора</label
+                            >Соглашаюсь с рассылкой и принимаю<a class="agree-link">Условия
+                            договора<a></label
                         >
                     </div>
                     <button class="button-send" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
-
         <!-- SKRIPT -->
         <script src="./js/modal.js"></script>
     </body>
